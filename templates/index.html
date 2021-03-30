@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>video_dewarp</title>
+    </head>
+    <body>
+        <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" />
+        <input type="submit" />
+        <font size="5" face="Courier New" >
+        <table style='TABLE-LAYOUT:fixed'>
+	    <hr style="width: 90%; height: 1px; border: none; background-color: #282828">
+            <tr align="center">
+                <td colspan="3"><b>PPT_input</b></td>
+            </tr>
+            <tr>
+                <td><img src="{{ frame0 }}" onload="if(this.height >= 400){this.height = 400}"/></td>
+            </tr>
+            <tr align="center">
+                <td colspan="3"><b>detection_result</b></td>
+            </tr>
+            <tr>
+                <td><img src="{{ frame1}}" onload="if(this.height >= 400){this.height = 400}"/></td>
+            </tr>
+        </table>
+        </font>
+        </form>
+    </body>
+</html>
