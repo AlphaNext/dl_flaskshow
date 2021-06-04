@@ -60,7 +60,6 @@ def upload_file():
             # some processing code by your model
             res_name = os.path.join(app.config['OUTPUT_FOLDER'], 'dst.jpg')
             print(res_name)
-            print(res_name1)
             return render_template('index.html', frame0=img_name, frame1=res_name)
     return render_template('index.html')
 
